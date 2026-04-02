@@ -73,9 +73,9 @@ export default function Impact() {
               </div>
               <div>
                 <span className="font-sans text-[#C8A44A] text-xs tracking-[0.4em] uppercase font-black mb-8 block">Annual Value Proposition</span>
-                <div className="flex flex-col md:flex-row md:items-baseline gap-4 mt-8 mb-6">
-                  <span className="font-serif text-4xl md:text-6xl text-[#0A1A3A] font-light">₩</span>
-                  <h3 className="font-serif text-5xl md:text-8xl text-[#0A1A3A] font-black tracking-tighter leading-none">2,000,000,000,000<span className="text-[#C8A44A]">+</span></h3>
+                <div className="flex flex-col md:flex-row md:items-baseline gap-2 mt-8 mb-6 overflow-hidden">
+                  <span className="font-serif text-3xl md:text-4xl text-[#0A1A3A] font-light">₩</span>
+                  <h3 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-[#0A1A3A] font-black tracking-tighter leading-none break-all">2,000,000,000,000<span className="text-[#C8A44A]">+</span></h3>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-0.5 bg-[#C8A44A]"></div>
