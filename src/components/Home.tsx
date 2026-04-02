@@ -148,15 +148,24 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <div className="md:col-span-8 bg-white p-12 flex flex-col justify-between shadow-sm border border-black/5">
-              <div>
-                <span className="text-[10px] tracking-widest uppercase text-[#45464E] font-bold">Annual Value Proposition</span>
-                <h3 className="font-serif text-5xl md:text-7xl text-[#0A1A3A] font-black mt-8 mb-4">₩2,000,000,000,000+</h3>
-                <p className="font-serif text-2xl text-[#45464E] font-medium">연간 2조 원 이상의 직접적 경제 효과</p>
+            <div className="md:col-span-8 bg-white p-12 md:p-16 flex flex-col justify-between shadow-2xl border border-black/5 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-[0.03] pointer-events-none group-hover:scale-110 transition-transform duration-700">
+                <TrendingUp size={128} />
               </div>
-              <div className="mt-16 border-t border-black/5 pt-8">
-                <p className="text-[#45464E] leading-relaxed max-w-xl text-sm">
-                  국제회의 유치, 외교관 거주, MICE 산업 활성화를 통해 대한민국의 경제 지형을 재편합니다.
+              <div>
+                <span className="text-[10px] tracking-[0.4em] uppercase text-[#C8A44A] font-black mb-8 block">Annual Value Proposition</span>
+                <div className="flex flex-col md:flex-row md:items-baseline gap-4 mt-8 mb-6">
+                  <span className="font-serif text-4xl md:text-5xl text-[#0A1A3A] font-light">₩</span>
+                  <h3 className="font-serif text-5xl md:text-8xl text-[#0A1A3A] font-black tracking-tighter leading-none">2,000,000,000,000<span className="text-[#C8A44A]">+</span></h3>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-0.5 bg-[#C8A44A]"></div>
+                  <p className="font-serif text-2xl text-[#45464E] font-medium tracking-tight">연간 2조 원 이상의 직접적 경제 효과</p>
+                </div>
+              </div>
+              <div className="mt-16 border-t border-black/5 pt-10">
+                <p className="text-[#45464E] leading-relaxed max-w-xl text-lg font-serif italic">
+                  "국제회의 유치와 MICE 산업 활성화를 통해 대한민국의 경제 지형을 글로벌 허브로 재편합니다."
                 </p>
               </div>
             </div>

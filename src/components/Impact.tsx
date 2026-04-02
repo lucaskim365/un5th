@@ -66,16 +66,25 @@ export default function Impact() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="md:col-span-8 bg-[#F5F4F0] p-12 flex flex-col justify-between shadow-sm"
+              className="md:col-span-8 bg-[#F5F4F0] p-12 md:p-16 flex flex-col justify-between shadow-2xl relative"
             >
-              <div>
-                <span className="font-sans text-[#45464E] text-xs tracking-widest uppercase font-bold">Annual Value Proposition</span>
-                <h3 className="font-serif text-5xl md:text-7xl text-[#0A1A3A] font-black mt-8 mb-4">₩2,000,000,000,000+</h3>
-                <p className="font-serif text-2xl text-[#45464E] font-medium">연간 2조 원 이상의 직접적 경제 효과</p>
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none">
+                <TrendingUp size={128} />
               </div>
-              <div className="mt-16 border-t border-black/5 pt-8">
-                <p className="text-[#45464E] leading-relaxed max-w-xl">
-                  사무국 유치에 따른 국제회의 유치, 외교관 및 국제기구 종사자 거주, 관광 수요 증대는 국내 GDP 성장의 핵심 동력이 됩니다.
+              <div>
+                <span className="font-sans text-[#C8A44A] text-xs tracking-[0.4em] uppercase font-black mb-8 block">Annual Value Proposition</span>
+                <div className="flex flex-col md:flex-row md:items-baseline gap-4 mt-8 mb-6">
+                  <span className="font-serif text-4xl md:text-6xl text-[#0A1A3A] font-light">₩</span>
+                  <h3 className="font-serif text-5xl md:text-8xl text-[#0A1A3A] font-black tracking-tighter leading-none">2,000,000,000,000<span className="text-[#C8A44A]">+</span></h3>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-0.5 bg-[#C8A44A]"></div>
+                  <p className="font-serif text-2xl md:text-3xl text-[#45464E] font-medium tracking-tight">연간 2조 원 이상의 직접적 경제 효과</p>
+                </div>
+              </div>
+              <div className="mt-16 border-t border-black/10 pt-10">
+                <p className="text-[#0A1A3A]/70 leading-relaxed max-w-xl font-serif text-lg italic">
+                  "국제회의 유치, 외교관 및 국제기구 종사자 거주, 관광 수요 증대는 국내 GDP 성장의 핵심 동력이자 동북아 경제 허브의 완성을 의미합니다."
                 </p>
               </div>
             </motion.div>
