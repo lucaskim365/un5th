@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
-import { 
-  Globe, 
-  Heart, 
-  Wallet, 
+import {
+  Globe,
+  Heart,
+  Wallet,
   Quote
 } from "lucide-react";
 
@@ -15,31 +15,31 @@ export default function Vision() {
       {/* Hero Header */}
       <section className="relative min-h-[70vh] flex items-center justify-center bg-[#FAF9F5] px-12 overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop" 
-            alt="UN Flag and DMZ Sunset" 
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+            alt="UN Flag and DMZ Sunset"
             className="w-full h-full object-cover opacity-80 grayscale-[20%] brightness-[40%]"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A1A3A]/40 to-transparent"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="font-sans text-xs tracking-[0.3em] text-white uppercase mb-8 block font-bold"
           >
-            유엔 제5사무국 한국유치위원회
+            UN 5th Office Vision
           </motion.span>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight tracking-tighter mb-12 font-black"
           >
-            공백을 메우는<br/>동양의 목소리
+            공백을 메우는<br />동양의 목소리
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -65,8 +65,8 @@ export default function Vision() {
               <p>이 공백을 메우는 일은 단순한 지역 안배를 넘어, 전 지구적 거버넌스의 정당성을 확보하는 필수적 과제입니다.</p>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -86,9 +86,9 @@ export default function Vision() {
               ))}
             </div>
             <div className="mt-12 opacity-40">
-              <img 
-                src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2066&auto=format&fit=crop" 
-                alt="World Map Silhouette" 
+              <img
+                src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2066&auto=format&fit=crop"
+                alt="World Map Silhouette"
                 className="w-full h-auto grayscale contrast-125"
                 referrerPolicy="no-referrer"
               />
@@ -106,26 +106,26 @@ export default function Vision() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { 
-                icon: <Globe className="text-[#775A00]" size={48} />, 
-                title: "Asia Representation", 
+              {
+                icon: <Globe className="text-[#775A00]" size={48} />,
+                title: "Asia Representation",
                 desc: "아시아의 다양한 문화와 정치적 입장을 대변하며, UN의 보편적 가치를 지역 사회로 확산시킵니다.",
                 val: "VALUE 01"
               },
-              { 
-                icon: <Heart className="text-[#775A00]" size={48} />, 
-                title: "Peace in DMZ", 
+              {
+                icon: <Heart className="text-[#775A00]" size={48} />,
+                title: "Peace in DMZ",
                 desc: "한반도의 분단을 넘어 동북아의 긴장 완화를 도모하고, 항구적인 평화 프로세스의 중심지가 됩니다.",
                 val: "VALUE 02"
               },
-              { 
-                icon: <Wallet className="text-[#775A00]" size={48} />, 
-                title: "Economic Impact", 
+              {
+                icon: <Wallet className="text-[#775A00]" size={48} />,
+                title: "Economic Impact",
                 desc: "국제기구 유치를 통한 고용 창출과 MICE 산업의 활성화로 지역과 국가의 동반 성장을 견인합니다.",
                 val: "VALUE 03"
               }
             ].map((item, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -10 }}
                 className="p-12 bg-[#F5F4F0] transition-all border-b-2 border-transparent hover:border-[#C8A44A]"
@@ -149,11 +149,11 @@ export default function Vision() {
           <div className="grid lg:grid-cols-2 gap-24 items-start">
             <div className="space-y-16">
               {[
-                { 
+                {
                   quote: "아시아 제5사무국 유치는 인류 평화를 향한 한국의 의지를 증명하는 역사적 이정표가 될 것입니다.",
                   cite: "International Diplomacy Council Chair"
                 },
-                { 
+                {
                   quote: "동북아의 평화는 세계 평화의 핵심 축입니다. DMZ 인근의 UN 기구 설치는 그 상징성만으로도 거대한 억지력이 됩니다.",
                   cite: "Peace Studies Scholar, Stockholm"
                 }
@@ -167,7 +167,7 @@ export default function Vision() {
                 </div>
               ))}
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/5 p-12 backdrop-blur-md border border-white/10">
                 <span className="block font-sans text-[10px] uppercase tracking-[0.2em] mb-4 opacity-60 font-bold">Global Support</span>
