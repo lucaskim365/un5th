@@ -29,7 +29,7 @@ export default function Vision() {
             animate={{ opacity: 1, y: 0 }}
             className="font-sans text-xs tracking-[0.3em] text-white uppercase mb-8 block font-bold"
           >
-            UN 5th Office Vision
+            유엔 제5사무국 한국유치위원회
           </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}

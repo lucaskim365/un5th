@@ -89,7 +89,7 @@ export default function App() {
             onClick={() => setCurrentPage("home")}
             className="text-2xl font-serif font-bold tracking-tighter text-[#0A1A3A] hover:opacity-80 transition-opacity"
           >
-            UN 5TH OFFICE
+            유엔 제5사무국 한국유치위원회
           </button>
           
           {/* Desktop Menu */}
@@ -159,7 +159,7 @@ export default function App() {
         <div className={CONTAINER_MAX_WIDTH}>
           <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
             <div className="max-w-sm">
-              <div className="text-2xl font-serif font-bold tracking-tighter mb-6">UN 5TH OFFICE</div>
+              <div className="text-2xl font-serif font-bold tracking-tighter mb-6">유엔 제5사무국 한국유치위원회</div>
               <p className="text-xs text-slate-400 leading-relaxed uppercase tracking-widest">
                 제5차 UN 본부 설립을 통해 아시아의 외교적 형평성을 옹호하는 글로벌 평화 이니셔티브입니다.
               </p>
@@ -192,7 +192,7 @@ export default function App() {
           
           <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-[10px] tracking-widest uppercase text-slate-500">
-              © 2024 UN 5th Office Campaign. All rights reserved.
+              © 2024 유엔 제5사무국 한국유치위원회. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Globe size={16} className="text-slate-500 hover:text-white cursor-pointer transition-colors" />
